@@ -10,7 +10,7 @@ upstream graphite {
 
 server {
 	listen 80;
-	server_name <%= node['oc-graphite']['nginx']['hostname'] || node.fqdn %>;
+	server_name <%= node['oc-graphite']['nginx']['hostname'] %>;
 	charset utf-8;
 	client_max_body_size 15M;
 
